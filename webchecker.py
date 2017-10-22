@@ -29,16 +29,16 @@ while True:
             sz.mywebsite.red.on()
             sz.mywebsite.green.off()
 
-        if d['status'][0]['indicator'] == "none":
+        if d['status']['indicator'] == "none":
             sz.discord.green.on()
             sz.discord.red.off()
-        elif d['status'][0]['indicator'] == "minor":
+        elif d['status']['indicator'] == "minor":
             sz.discord.red.on()
             sz.discord.green.on()
-        elif d['status'][0]['indicator'] == "major":
+        elif d['status']['indicator'] == "major":
             sz.discord.red.on()
             sz.discord.green.off()
-        elif d['status'][0]['indicator'] == "critical":
+        elif d['status']['indicator'] == "critical":
             sz.discord.blink()
 
         if website_up('https://twitter.com/'):
