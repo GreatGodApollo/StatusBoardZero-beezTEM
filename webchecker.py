@@ -51,4 +51,4 @@ while True:
     else:
         sz.blink()  # internet down, blink everything
 
-    sleep(60*60)  # check every hour
+    sleep(60)  # check every minute
