@@ -22,7 +22,7 @@ sz = StatusZero('mywebsite', 'discord', 'twitter')
 while True:
     if website_up('https://www.google.com/'):
         d = requests.get('https://srhpyqt94yxb.statuspage.io/api/v2/status.json').json()
-        if website_up('https://beeztem.000webhostapp.com/'):
+        if website_up('https://apollodev.ml/'):
             sz.mywebsite.green.on()
             sz.mywebsite.red.off()
         else:
